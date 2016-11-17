@@ -1,0 +1,17 @@
+<beans xmlns:context="http://www.springframework.org/schema/context">
+
+<context:component-scan base-package="com.xxx.rpc.sample.server"/>
+
+<context:property-placeholder location="classpath:config.properties"/>
+
+        <!-- 配置服务注册组件 -->
+<bean id="serviceRegistry" class="com.xxx.rpc.registry.ServiceRegistry">
+<constructor-arg name="registryAddress" value="${registry.address}"/>
+</bean>
+
+        <!-- 配置 RPC 服务器 -->
+<bean id="rpcServer" class="com.xxx.rpc.server.RpcServer">
+<constructor-arg name="serverAddress" value="${server.address}"/>
+<constructor-arg name="serviceRegistry" ref="serviceRegistry"/>
+</bean>
+</beans>
