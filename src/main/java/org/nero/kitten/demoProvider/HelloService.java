@@ -10,6 +10,7 @@ import org.nero.kitten.kitten.core.KittenService;
  */
 
 @KittenService(IHelloService.class)
+
 public class HelloService implements IHelloService {
 
     public String sayHello(String hello) {
