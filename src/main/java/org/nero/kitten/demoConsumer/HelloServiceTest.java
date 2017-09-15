@@ -2,7 +2,7 @@ package org.nero.kitten.demoConsumer;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.nero.kitten.demoProvider.IHelloService;
+import org.nero.kitten.demoProvider.service.IHelloService;
 import org.nero.kitten.kitten.core.KittenProxy;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;

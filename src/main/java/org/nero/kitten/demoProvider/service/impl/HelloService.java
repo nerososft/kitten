@@ -1,5 +1,6 @@
-package org.nero.kitten.demoProvider;
+package org.nero.kitten.demoProvider.service.impl;
 
+import org.nero.kitten.demoProvider.service.IHelloService;
 import org.nero.kitten.kitten.core.KittenService;
 
 /**

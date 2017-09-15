@@ -1,4 +1,4 @@
-package org.nero.kitten.demoProvider;
+package org.nero.kitten.demoProvider.service;
 
 /**
  * Author :  root

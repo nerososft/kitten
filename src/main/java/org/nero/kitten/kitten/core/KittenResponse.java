@@ -39,4 +39,13 @@ public class KittenResponse {
     public boolean isError() {
         return error == null?true:false;
     }
+
+    @Override
+    public String toString() {
+        return "KittenResponse{" +
+                "requestId='" + requestId + '\'' +
+                ", error=" + error +
+                ", result=" + result +
+                '}';
+    }
 }
