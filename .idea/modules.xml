@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/kitten.iml" filepath="$PROJECT_DIR$/kitten.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kitten-common/kitten-common.iml" filepath="$PROJECT_DIR$/kitten-common/kitten-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kitten-core/kitten-core.iml" filepath="$PROJECT_DIR$/kitten-core/kitten-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kitten-monitor/kitten-monitor.iml" filepath="$PROJECT_DIR$/kitten-monitor/kitten-monitor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kitten-register/kitten-register.iml" filepath="$PROJECT_DIR$/kitten-register/kitten-register.iml" />
     </modules>
   </component>
 </project>
