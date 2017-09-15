@@ -8,6 +8,8 @@ import org.slf4j.LoggerFactory;
 import org.springframework.cglib.reflect.FastClass;
 import org.springframework.cglib.reflect.FastMethod;
 
+import java.lang.reflect.Method;
+import java.util.HashMap;
 import java.util.Map;
 
 /**
@@ -21,6 +23,8 @@ public class KittenHandler extends SimpleChannelInboundHandler<KittenRequest> {
     private static final Logger LOGGER = LoggerFactory.getLogger(KittenHandler.class);
 
     private final Map<String, Object> handlerMap;
+
+    private Map<String,FastMethod> methodCache = new HashMap<>();
 
     public KittenHandler(Map<String, Object> handlerMap) {
         this.handlerMap = handlerMap;
@@ -53,7 +57,12 @@ public class KittenHandler extends SimpleChannelInboundHandler<KittenRequest> {
         return method.invoke(serviceBean, parameters);*/
 
         FastClass serviceFastClass = FastClass.create(serviceClass);
-        FastMethod serviceFastMethod = serviceFastClass.getMethod(methodName, parameterTypes);
+        FastMethod serviceFastMethod = null;
+        if((serviceFastMethod = methodCache.get(methodName))!=null){
+            return serviceFastMethod.invoke(serviceBean, parameters);
+        }
+        serviceFastMethod = serviceFastClass.getMethod(methodName, parameterTypes);
+        methodCache.put(methodName,serviceFastMethod);
         return serviceFastMethod.invoke(serviceBean, parameters);
     }
 
