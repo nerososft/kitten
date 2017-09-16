@@ -5,6 +5,9 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/kitten-core/pom.xml" />
+        <option value="$PROJECT_DIR$/kitten-common/pom.xml" />
+        <option value="$PROJECT_DIR$/kitten-monitor/pom.xml" />
+        <option value="$PROJECT_DIR$/kitten-register/pom.xml" />
       </list>
     </option>
   </component>
