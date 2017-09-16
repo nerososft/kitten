@@ -1,7 +1,7 @@
-package org.nero.kitten.registercenter.demo;
+package org.nero.kitten.register.demo;
 
 import com.sun.corba.se.spi.activation.Server;
-import org.nero.kitten.registercenter.core.RegisterServer;
+import org.nero.kitten.register.core.RegisterServer;
 
 /**
  * Author neroyang

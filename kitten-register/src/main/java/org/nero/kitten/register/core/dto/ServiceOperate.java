@@ -1,6 +1,6 @@
-package org.nero.kitten.registercenter.core.dto;
+package org.nero.kitten.register.core.dto;
 
-import org.nero.kitten.registercenter.core.dto.OperateType;
+import org.nero.kitten.register.core.dto.OperateType;
 
 import java.io.Serializable;
 

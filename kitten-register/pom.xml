@@ -18,5 +18,10 @@
 
   <dependencies>
     <!-- lang: xml -->
+    <dependency>
+      <groupId>org.nero.kitten</groupId>
+      <artifactId>kitten-common</artifactId>
+      <version>1.0-SNAPSHOT</version>
+    </dependency>
   </dependencies>
 </project>

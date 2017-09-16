@@ -1,4 +1,4 @@
-package org.nero.kitten.registercenter.core;
+package org.nero.kitten.register.core;
 
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelFuture;
@@ -8,10 +8,10 @@ import io.netty.channel.EventLoopGroup;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
-import org.nero.kitten.kitten.core.KittenDecoder;
-import org.nero.kitten.kitten.core.KittenEncoder;
-import org.nero.kitten.kitten.core.KittenResponse;
-import org.nero.kitten.registercenter.core.dto.ServiceRequest;
+import org.nero.kitten.common.core.KittenDecoder;
+import org.nero.kitten.common.core.KittenEncoder;
+import org.nero.kitten.common.core.KittenResponse;
+import org.nero.kitten.register.core.dto.ServiceRequest;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;

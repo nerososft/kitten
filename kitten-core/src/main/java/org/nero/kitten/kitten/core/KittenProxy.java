@@ -2,10 +2,9 @@ package org.nero.kitten.kitten.core;
 
 import net.sf.cglib.proxy.InvocationHandler;
 import net.sf.cglib.proxy.Proxy;
-import org.nero.kitten.kitten.core.KittenClient;
-import org.nero.kitten.kitten.core.KittenRequest;
-import org.nero.kitten.kitten.core.KittenResponse;
-import org.nero.kitten.kitten.core.ServiceDiscovery;
+import org.nero.kitten.common.core.KittenClient;
+import org.nero.kitten.common.core.KittenRequest;
+import org.nero.kitten.common.core.KittenResponse;
 
 import java.lang.reflect.Method;
 import java.util.UUID;

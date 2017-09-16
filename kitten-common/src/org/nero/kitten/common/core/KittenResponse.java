@@ -1,4 +1,4 @@
-package org.nero.kitten.kitten.core;
+package org.nero.kitten.common.core;
 
 import java.io.Serializable;
 

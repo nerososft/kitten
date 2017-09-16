@@ -1,12 +1,23 @@
-package org.nero.kitten.kitten.core;
+package org.nero.kitten.register.demo;
 
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.*;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioSocketChannel;
+import org.nero.kitten.common.core.KittenClient;
+import org.nero.kitten.common.core.KittenDecoder;
+import org.nero.kitten.common.core.KittenEncoder;
+import org.nero.kitten.common.core.KittenResponse;
+import org.nero.kitten.register.core.dto.OperateType;
+import org.nero.kitten.register.core.dto.Service;
+import org.nero.kitten.register.core.dto.ServiceOperate;
+import org.nero.kitten.register.core.dto.ServiceRequest;
+import org.nero.kitten.register.utils.JedisUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.util.UUID;
 
 /**
  * Author :  root
@@ -14,7 +25,7 @@ import org.slf4j.LoggerFactory;
  * Date   :  16-11-17
  * Time   :  下午4:46
  */
-public class KittenClient extends SimpleChannelInboundHandler<KittenResponse> {
+public class DemoClient extends SimpleChannelInboundHandler<KittenResponse> {
     private static final Logger LOGGER = LoggerFactory.getLogger(KittenClient.class);
 
     private String host;
@@ -24,7 +35,7 @@ public class KittenClient extends SimpleChannelInboundHandler<KittenResponse> {
 
     private final Object obj = new Object();
 
-    public KittenClient(String host, int port) {
+    public DemoClient(String host, int port) {
         this.host = host;
         this.port = port;
     }
@@ -44,7 +55,7 @@ public class KittenClient extends SimpleChannelInboundHandler<KittenResponse> {
         ctx.close();
     }
 
-    public KittenResponse send(KittenRequest request) throws Exception {
+    public KittenResponse send(ServiceRequest request) throws Exception {
         EventLoopGroup group = new NioEventLoopGroup();
         try {
             Bootstrap bootstrap = new Bootstrap();
@@ -53,9 +64,9 @@ public class KittenClient extends SimpleChannelInboundHandler<KittenResponse> {
                         @Override
                         public void initChannel(SocketChannel channel) throws Exception {
                             channel.pipeline()
-                                    .addLast(new KittenEncoder(KittenRequest.class)) // 将 RPC 请求进行编码（为了发送请求）
+                                    .addLast(new KittenEncoder(ServiceRequest.class)) // 将 RPC 请求进行编码（为了发送请求）
                                     .addLast(new KittenDecoder(KittenResponse.class)) // 将 RPC 响应进行解码（为了处理响应）
-                                    .addLast(KittenClient.this); // 使用 RpcClient 发送 RPC 请求
+                                    .addLast(DemoClient.this); // 使用 RpcClient 发送 RPC 请求
                         }
                     })
                     .option(ChannelOption.SO_KEEPALIVE, true);
@@ -73,6 +84,35 @@ public class KittenClient extends SimpleChannelInboundHandler<KittenResponse> {
             return response;
         } finally {
             group.shutdownGracefully();
+        }
+    }
+
+    public static void main(String[] args){
+        DemoClient client = new DemoClient("127.0.0.1",8888);
+        try {
+            KittenResponse response =  client.send(
+                            new ServiceRequest<ServiceOperate<Service>>(
+                                    UUID.randomUUID().toString(),
+                                    new ServiceOperate<Service>(
+                                        OperateType.SEARCH,
+                                        new Service(
+                                            UUID.randomUUID().toString(),
+                                            "127.0.01",
+                                            8080,
+                                            "DemoApp",
+                                            "com.nero.service.IHelloWorld",
+                                            "sayHello",
+                                            new Class<?>[]{String.class},
+                                            new Object[]{"hello"}
+                                        )
+                                    )
+                            )
+                    );
+
+            System.out.println(response.toString());
+
+           } catch (Exception e) {
+            e.printStackTrace();
         }
     }
 }

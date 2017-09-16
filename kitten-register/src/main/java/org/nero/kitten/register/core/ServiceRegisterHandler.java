@@ -1,17 +1,17 @@
-package org.nero.kitten.registercenter.core;
+package org.nero.kitten.register.core;
 
 import com.google.gson.Gson;
 import io.netty.channel.ChannelFutureListener;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
-import org.nero.kitten.kitten.core.KittenResponse;
-import org.nero.kitten.kitten.core.SerializationUtil;
-import org.nero.kitten.registercenter.core.dto.Service;
-import org.nero.kitten.registercenter.core.dto.ServiceOperate;
-import org.nero.kitten.registercenter.core.dto.ServiceRequest;
-import org.nero.kitten.registercenter.utils.JedisUtils;
+import org.nero.kitten.common.core.KittenResponse;
+import org.nero.kitten.common.core.SerializationUtil;
+import org.nero.kitten.register.core.dto.Service;
+import org.nero.kitten.register.core.dto.ServiceOperate;
+import org.nero.kitten.register.core.dto.ServiceRequest;
+import org.nero.kitten.register.utils.JedisUtils;
 
-import static org.nero.kitten.registercenter.core.dto.OperateType.*;
+import static org.nero.kitten.register.core.dto.OperateType.*;
 
 /**
  * Author neroyang

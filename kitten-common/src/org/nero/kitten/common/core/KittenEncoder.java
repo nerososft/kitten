@@ -1,9 +1,8 @@
-package org.nero.kitten.kitten.core;
+package org.nero.kitten.common.core;
 
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.handler.codec.MessageToByteEncoder;
-import org.nero.kitten.kitten.core.SerializationUtil;
 
 import java.util.ArrayList;
 import java.util.List;

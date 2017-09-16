@@ -1,4 +1,4 @@
-package org.nero.kitten.registercenter.utils;
+package org.nero.kitten.register.utils;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

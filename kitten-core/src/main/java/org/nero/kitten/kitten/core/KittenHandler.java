@@ -3,14 +3,13 @@ package org.nero.kitten.kitten.core;
 import io.netty.channel.ChannelFutureListener;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
-import org.nero.kitten.kitten.core.KittenRequest;
-import org.nero.kitten.kitten.core.KittenResponse;
+import org.nero.kitten.common.core.KittenRequest;
+import org.nero.kitten.common.core.KittenResponse;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.cglib.reflect.FastClass;
 import org.springframework.cglib.reflect.FastMethod;
 
-import java.lang.reflect.Method;
 import java.util.HashMap;
 import java.util.Map;
 

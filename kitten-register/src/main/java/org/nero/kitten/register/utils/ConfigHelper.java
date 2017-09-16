@@ -1,4 +1,4 @@
-package org.nero.kitten.registercenter.utils;
+package org.nero.kitten.register.utils;
 
 import com.sun.javafx.fxml.PropertyNotFoundException;
 
@@ -23,7 +23,7 @@ public class ConfigHelper {
         InputStreamReader inputStreamReader = null;
         BufferedReader bufferedReader = null;
         try {
-            inputStream = new FileInputStream(System.getProperty("user.dir")+"/kitten-core/src/main/resources/"+configName);
+            inputStream = new FileInputStream(System.getProperty("user.dir")+"/kitten-register/src/main/resources/"+configName);
             inputStreamReader = new InputStreamReader(inputStream);
             bufferedReader = new BufferedReader(inputStreamReader);
             String line;
