@@ -1,4 +1,4 @@
-package ServiceNotify;
+package ServiceNotify.core;
 
 import java.io.IOException;
 import java.io.ObjectInputStream;

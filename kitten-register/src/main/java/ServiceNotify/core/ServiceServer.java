@@ -1,17 +1,16 @@
-package ServiceNotify;
+package ServiceNotify.core;
 
-import org.springframework.stereotype.Service;
+import ServiceNotify.request.RegisterRequest;
+import ServiceNotify.request.Request;
 
 import java.io.IOException;
 import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
 import java.net.InetSocketAddress;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.*;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-import java.util.logging.Handler;
 
 /**
  * Author neroyang

@@ -1,5 +1,9 @@
 package ServiceNotify;
 
+import ServiceNotify.core.Server;
+import ServiceNotify.core.ServiceServer;
+import ServiceNotify.request.RegisterRequest;
+
 import java.io.IOException;
 
 /**

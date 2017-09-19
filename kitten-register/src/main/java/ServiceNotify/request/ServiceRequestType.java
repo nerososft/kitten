@@ -1,4 +1,4 @@
-package ServiceNotify;
+package ServiceNotify.request;
 
 /**
  * Author neroyang

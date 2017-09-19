@@ -1,5 +1,12 @@
 package ServiceNotify;
 
+import ServiceNotify.core.Client;
+import ServiceNotify.core.ConsumerServer;
+import ServiceNotify.core.Server;
+import ServiceNotify.request.Request;
+import ServiceNotify.request.ServiceRequestType;
+import ServiceNotify.request.SubscribeRequest;
+
 import java.io.IOException;
 import java.net.InetSocketAddress;
 import java.util.ArrayList;
