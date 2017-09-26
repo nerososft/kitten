@@ -12,6 +12,6 @@ public interface Server {
 
     void start() throws IOException;
 
-    void stop();
+    void stop() throws InterruptedException;
 
 }

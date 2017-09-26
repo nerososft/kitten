@@ -10,7 +10,7 @@ import org.nero.kitten.register.core.RegisterServer;
  */
 public class App {
     public static void main(String[] args){
-        RegisterServer server = new RegisterServer();
+        RegisterServer server = new RegisterServer(8888);
         server.start();
     }
 }

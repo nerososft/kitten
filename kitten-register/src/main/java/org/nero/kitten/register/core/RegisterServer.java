@@ -1,5 +1,11 @@
 package org.nero.kitten.register.core;
 
+import ServiceNotify.core.Server;
+import ServiceNotify.request.InvokeRequest;
+import ServiceNotify.request.RegisterRequest;
+import ServiceNotify.request.Request;
+import ServiceNotify.request.SubscribeRequest;
+import com.sun.org.apache.xpath.internal.operations.Bool;
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelFuture;
 import io.netty.channel.ChannelInitializer;
@@ -11,11 +17,15 @@ import io.netty.channel.socket.nio.NioServerSocketChannel;
 import org.nero.kitten.common.core.KittenDecoder;
 import org.nero.kitten.common.core.KittenEncoder;
 import org.nero.kitten.common.core.KittenResponse;
-import org.nero.kitten.register.core.dto.ServiceRequest;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
+import java.net.InetSocketAddress;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
  * Author neroyang
@@ -23,9 +33,47 @@ import java.lang.reflect.Proxy;
  * Date   2017/9/13
  * Time   下午2:18
  */
-public class RegisterServer {
+public class RegisterServer implements Server {
+
+    private int port = 8888;
+    private Boolean isRunning = true;
+    private ChannelFuture future;
 
 
+    private static Map<String,List<InetSocketAddress>> notifyList = new HashMap<String, List<InetSocketAddress>>(20);
+    private static Map<String,List<RegisterRequest>> serviceNodeList = new HashMap<String, List<RegisterRequest>>(20);
+    public static void addNotify(String serviceName,InetSocketAddress address){
+        System.out.println("添加订阅："+serviceName+" ："+address);
+        if(notifyList.get(serviceName)!=null) {
+            notifyList.get(serviceName).add(address);
+        }else{
+            List<InetSocketAddress> list = new ArrayList<InetSocketAddress>(10);
+            list.add(address);
+            notifyList.put(serviceName,list);
+        }
+    }
+    public static List<InetSocketAddress> getNotifySocket(String serviceName){
+        System.out.println("消费者："+notifyList.toString());
+        return notifyList.get(serviceName);
+    }
+
+    public static void addServiceNode(String serviceName,RegisterRequest registerRequest){
+        if(serviceNodeList.get(serviceName)!=null){
+            serviceNodeList.get(serviceName).add(registerRequest);
+        }else{
+            List<RegisterRequest> list = new ArrayList<RegisterRequest>(10);
+            list.add(registerRequest);
+            serviceNodeList.put(serviceName,list);
+        }
+    }
+    public static List<RegisterRequest> getServiceNode(String serviceName){
+        return serviceNodeList.get(serviceName);
+    }
+
+
+    public RegisterServer(int port) {
+        this.port = port;
+    }
 
     public void start(){
         EventLoopGroup boosGroup = new NioEventLoopGroup();
@@ -40,8 +88,9 @@ public class RegisterServer {
                         @Override
                         protected void initChannel(SocketChannel socketChannel) throws Exception {
                             socketChannel.pipeline()
-                                    .addLast(new KittenDecoder(ServiceRequest.class))
-                                    .addLast(new KittenEncoder(KittenResponse.class))
+                                    .addLast(new KittenDecoder(Request.class))
+
+                                    .addLast(new KittenEncoder(RegisterRequest.class))
                                     .addLast(new ServiceRegisterHandler());
                         }
                     }).option(ChannelOption.SO_BACKLOG,128)
@@ -49,11 +98,7 @@ public class RegisterServer {
 
 
             // 绑定端口，开始接收进来的连接
-            ChannelFuture f = serverBootstrap.bind(8888).sync(); // (7)
-
-
-            f.channel().closeFuture().sync();
-
+            future = serverBootstrap.bind(port).sync(); // (7)
         } catch (InterruptedException e) {
             e.printStackTrace();
         } finally {
@@ -62,5 +107,24 @@ public class RegisterServer {
         }
     }
 
+    public void stop() throws InterruptedException {
+        future.channel().closeFuture().sync();
+    }
 
+
+    public int getPort() {
+        return port;
+    }
+
+    public void setPort(int port) {
+        this.port = port;
+    }
+
+    public Boolean getRunning() {
+        return isRunning;
+    }
+
+    public void setRunning(Boolean running) {
+        isRunning = running;
+    }
 }
