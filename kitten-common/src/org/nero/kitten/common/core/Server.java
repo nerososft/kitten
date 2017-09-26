@@ -1,4 +1,4 @@
-package ServiceNotify.core;
+package org.nero.kitten.common.core;
 
 import java.io.IOException;
 

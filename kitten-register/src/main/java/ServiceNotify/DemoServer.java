@@ -1,8 +1,8 @@
 package ServiceNotify;
 
-import ServiceNotify.core.Server;
+import org.nero.kitten.common.core.Server;
 import ServiceNotify.core.ServiceServer;
-import ServiceNotify.request.RegisterRequest;
+import org.nero.kitten.common.core.request.RegisterRequest;
 
 import java.io.IOException;
 

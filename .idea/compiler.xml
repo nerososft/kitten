@@ -6,19 +6,24 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="kitten" />
         <module name="kitten-common" />
+        <module name="kitten-consumer" />
         <module name="kitten-core" />
         <module name="kitten-monitor" />
+        <module name="kitten-provider" />
         <module name="kitten-register" />
+        <module name="kittenprovider" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="kitten" target="1.7" />
       <module name="kitten-common" target="1.5" />
+      <module name="kitten-consumer" target="1.7" />
       <module name="kitten-core" target="1.7" />
       <module name="kitten-monitor" target="1.5" />
+      <module name="kitten-provider" target="1.7" />
       <module name="kitten-register" target="1.5" />
+      <module name="kittenprovider" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>

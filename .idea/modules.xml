@@ -4,9 +4,12 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/kitten.iml" filepath="$PROJECT_DIR$/kitten.iml" />
       <module fileurl="file://$PROJECT_DIR$/kitten-common/kitten-common.iml" filepath="$PROJECT_DIR$/kitten-common/kitten-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kitten-consumer/kitten-consumer.iml" filepath="$PROJECT_DIR$/kitten-consumer/kitten-consumer.iml" />
       <module fileurl="file://$PROJECT_DIR$/kitten-core/kitten-core.iml" filepath="$PROJECT_DIR$/kitten-core/kitten-core.iml" />
       <module fileurl="file://$PROJECT_DIR$/kitten-monitor/kitten-monitor.iml" filepath="$PROJECT_DIR$/kitten-monitor/kitten-monitor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kitten-provider/kitten-provider.iml" filepath="$PROJECT_DIR$/kitten-provider/kitten-provider.iml" />
       <module fileurl="file://$PROJECT_DIR$/kitten-register/kitten-register.iml" filepath="$PROJECT_DIR$/kitten-register/kitten-register.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kitten-provider/kittenprovider.iml" filepath="$PROJECT_DIR$/kitten-provider/kittenprovider.iml" />
     </modules>
   </component>
 </project>

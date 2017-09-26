@@ -1,26 +1,22 @@
 package org.nero.kitten.register.core;
 
 import ServiceNotify.core.Notification;
-import ServiceNotify.core.ServiceServer;
-import ServiceNotify.request.InvokeRequest;
-import ServiceNotify.request.RegisterRequest;
-import ServiceNotify.request.Request;
-import ServiceNotify.request.SubscribeRequest;
-import com.google.gson.Gson;
+import org.nero.kitten.common.core.request.InvokeRequest;
+import org.nero.kitten.common.core.request.RegisterRequest;
+import org.nero.kitten.common.core.request.Request;
+import org.nero.kitten.common.core.request.SubscribeRequest;
 import io.netty.channel.ChannelFutureListener;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
 import org.nero.kitten.common.core.KittenResponse;
 import org.nero.kitten.common.core.SerializationUtil;
-import org.nero.kitten.register.core.dto.Service;
+import org.nero.kitten.common.core.dto.Service;
 import org.nero.kitten.register.utils.JedisUtils;
 
 import java.net.InetSocketAddress;
 import java.util.List;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-
-import static ServiceNotify.request.ServiceRequestType.SUBSCRIBE;
 
 /**
  * Author neroyang

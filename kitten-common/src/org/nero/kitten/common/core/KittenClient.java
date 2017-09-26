@@ -5,6 +5,7 @@ import io.netty.channel.*;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioSocketChannel;
+import org.nero.kitten.common.core.request.Request;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -44,7 +45,7 @@ public class KittenClient extends SimpleChannelInboundHandler<KittenResponse> {
         ctx.close();
     }
 
-    public KittenResponse send(KittenRequest request) throws Exception {
+    public KittenResponse send(Request request) throws Exception {
         EventLoopGroup group = new NioEventLoopGroup();
         try {
             Bootstrap bootstrap = new Bootstrap();
@@ -53,7 +54,7 @@ public class KittenClient extends SimpleChannelInboundHandler<KittenResponse> {
                         @Override
                         public void initChannel(SocketChannel channel) throws Exception {
                             channel.pipeline()
-                                    .addLast(new KittenEncoder(KittenRequest.class)) // 将 RPC 请求进行编码（为了发送请求）
+                                    .addLast(new KittenEncoder(Request.class)) // 将 RPC 请求进行编码（为了发送请求）
                                     .addLast(new KittenDecoder(KittenResponse.class)) // 将 RPC 响应进行解码（为了处理响应）
                                     .addLast(KittenClient.this); // 使用 RpcClient 发送 RPC 请求
                         }

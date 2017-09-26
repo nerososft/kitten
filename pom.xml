@@ -17,7 +17,7 @@
       </plugin>
     </plugins>
   </build>
-  <packaging>jar</packaging>
+  <packaging>pom</packaging>
 
   <name>kitten</name>
   <url>http://maven.apache.org</url>
@@ -27,6 +27,8 @@
     <module>kitten-common</module>
     <module>kitten-monitor</module>
     <module>kitten-register</module>
+    <module>kitten-provider</module>
+    <module>kitten-consumer</module>
   </modules>
 
   <properties>

@@ -1,4 +1,4 @@
-package main.java.org.nero.kitten.demoProvider;
+package org.nero.kitten.demoProvider;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 

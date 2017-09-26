@@ -1,4 +1,4 @@
-package ServiceNotify.request;
+package org.nero.kitten.common.core.request;
 
 import java.io.Serializable;
 import java.util.Arrays;

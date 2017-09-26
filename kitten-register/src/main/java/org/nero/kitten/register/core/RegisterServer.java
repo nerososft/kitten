@@ -1,11 +1,8 @@
 package org.nero.kitten.register.core;
 
-import ServiceNotify.core.Server;
-import ServiceNotify.request.InvokeRequest;
-import ServiceNotify.request.RegisterRequest;
-import ServiceNotify.request.Request;
-import ServiceNotify.request.SubscribeRequest;
-import com.sun.org.apache.xpath.internal.operations.Bool;
+import org.nero.kitten.common.core.Server;
+import org.nero.kitten.common.core.request.RegisterRequest;
+import org.nero.kitten.common.core.request.Request;
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelFuture;
 import io.netty.channel.ChannelInitializer;
@@ -16,11 +13,7 @@ import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
 import org.nero.kitten.common.core.KittenDecoder;
 import org.nero.kitten.common.core.KittenEncoder;
-import org.nero.kitten.common.core.KittenResponse;
 
-import java.lang.reflect.InvocationHandler;
-import java.lang.reflect.Method;
-import java.lang.reflect.Proxy;
 import java.net.InetSocketAddress;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -42,6 +35,8 @@ public class RegisterServer implements Server {
 
     private static Map<String,List<InetSocketAddress>> notifyList = new HashMap<String, List<InetSocketAddress>>(20);
     private static Map<String,List<RegisterRequest>> serviceNodeList = new HashMap<String, List<RegisterRequest>>(20);
+
+
     public static void addNotify(String serviceName,InetSocketAddress address){
         System.out.println("添加订阅："+serviceName+" ："+address);
         if(notifyList.get(serviceName)!=null) {
@@ -52,6 +47,8 @@ public class RegisterServer implements Server {
             notifyList.put(serviceName,list);
         }
     }
+
+
     public static List<InetSocketAddress> getNotifySocket(String serviceName){
         System.out.println("消费者："+notifyList.toString());
         return notifyList.get(serviceName);
@@ -66,6 +63,8 @@ public class RegisterServer implements Server {
             serviceNodeList.put(serviceName,list);
         }
     }
+
+
     public static List<RegisterRequest> getServiceNode(String serviceName){
         return serviceNodeList.get(serviceName);
     }
@@ -99,6 +98,11 @@ public class RegisterServer implements Server {
 
             // 绑定端口，开始接收进来的连接
             future = serverBootstrap.bind(port).sync(); // (7)
+
+
+
+            future.channel().closeFuture().sync();
+
         } catch (InterruptedException e) {
             e.printStackTrace();
         } finally {

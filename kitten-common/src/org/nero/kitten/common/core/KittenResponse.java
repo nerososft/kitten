@@ -8,11 +8,11 @@ import java.io.Serializable;
  * Date   :  16-11-17
  * Time   :  下午4:36
  */
-public class KittenResponse implements Serializable {
+public class KittenResponse<T> implements Serializable {
 
     private String requestId;
     private Throwable error;
-    private Object result;
+    private T result;
 
     public String getRequestId() {
         return requestId;
@@ -30,11 +30,11 @@ public class KittenResponse implements Serializable {
         this.error = error;
     }
 
-    public Object getResult() {
+    public T getResult() {
         return result;
     }
 
-    public void setResult(Object result) {
+    public void setResult(T result) {
         this.result = result;
     }
 

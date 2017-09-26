@@ -1,4 +1,4 @@
-package org.nero.kitten.register.core.dto;
+package org.nero.kitten.common.core.dto;
 
 import java.io.Serializable;
 import java.util.Arrays;
