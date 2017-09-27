@@ -1,6 +1,6 @@
 package ServiceNotify.core;
 
-import org.nero.kitten.common.core.request.RegisterRequest;
+import main.java.core.request.RegisterRequest;
 
 import java.io.IOException;
 import java.io.ObjectInputStream;

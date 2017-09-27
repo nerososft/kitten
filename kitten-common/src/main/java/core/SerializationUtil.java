@@ -1,4 +1,4 @@
-package org.nero.kitten.common.core;
+package main.java.core;
 
 import com.dyuproject.protostuff.LinkedBuffer;
 import com.dyuproject.protostuff.ProtostuffIOUtil;

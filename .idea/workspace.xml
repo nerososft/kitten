@@ -2,14 +2,55 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="edaef943-db95-4b11-aa00-4d230e34e98e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kitten-consumer/src/main/java/org/nero/kitten/core/ConsumerServer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kitten-consumer/src/main/java/org/nero/kitten/core/NotifyHandler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kitten-provider/src/main/resources/provider.properties" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/kitten-register/src/main/java/org/nero/kitten/register/demo/DemoClient.java" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kitten-common/src/main/java/core/bean/Application.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kitten-common/src/main/java/core/bean/KittenBean.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kitten-common/src/main/java/core/bean/Register.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kitten-common/src/main/java/core/schemas/KittenBeanDefinationParser.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kitten-common/src/main/java/core/schemas/KittenNamespaceHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kitten-common/src/main/resources/kitten.handlers" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kitten-common/src/main/resources/kitten.schemas" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kitten-common/src/main/resources/kitten.xsd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kitten-provider/src/main/resources/provider.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kitten-common/src/org/nero/kitten/common/core/KittenEncoder.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kitten-provider/src/main/resources/provider.properties" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/kitten-common/src/org/nero/kitten/common/core/KittenClient.java" afterPath="$PROJECT_DIR$/kitten-common/src/main/java/core/KittenClient.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/kitten-common/src/org/nero/kitten/common/core/KittenDecoder.java" afterPath="$PROJECT_DIR$/kitten-common/src/main/java/core/KittenDecoder.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/kitten-common/src/org/nero/kitten/common/core/KittenRequest.java" afterPath="$PROJECT_DIR$/kitten-common/src/main/java/core/KittenRequest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/kitten-common/src/org/nero/kitten/common/core/KittenResponse.java" afterPath="$PROJECT_DIR$/kitten-common/src/main/java/core/KittenResponse.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/kitten-common/src/org/nero/kitten/common/core/KittenService.java" afterPath="$PROJECT_DIR$/kitten-common/src/main/java/core/KittenService.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/kitten-common/src/org/nero/kitten/common/core/SerializationUtil.java" afterPath="$PROJECT_DIR$/kitten-common/src/main/java/core/SerializationUtil.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/kitten-common/src/org/nero/kitten/common/core/Server.java" afterPath="$PROJECT_DIR$/kitten-common/src/main/java/core/Server.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/kitten-common/src/org/nero/kitten/common/core/dto/Service.java" afterPath="$PROJECT_DIR$/kitten-common/src/main/java/core/dto/Service.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/kitten-common/src/org/nero/kitten/common/core/request/InvokeRequest.java" afterPath="$PROJECT_DIR$/kitten-common/src/main/java/core/request/InvokeRequest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/kitten-common/src/org/nero/kitten/common/core/request/RegisterRequest.java" afterPath="$PROJECT_DIR$/kitten-common/src/main/java/core/request/RegisterRequest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/kitten-common/src/org/nero/kitten/common/core/request/Request.java" afterPath="$PROJECT_DIR$/kitten-common/src/main/java/core/request/Request.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/kitten-common/src/org/nero/kitten/common/core/request/ServiceRequestType.java" afterPath="$PROJECT_DIR$/kitten-common/src/main/java/core/request/ServiceRequestType.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/kitten-common/src/org/nero/kitten/common/core/request/SubscribeRequest.java" afterPath="$PROJECT_DIR$/kitten-common/src/main/java/core/request/SubscribeRequest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kitten-consumer/pom.xml" afterPath="$PROJECT_DIR$/kitten-consumer/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kitten-common/kitten-common.iml" afterPath="$PROJECT_DIR$/kitten-common/kitten-common.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kitten-consumer/src/main/java/org/nero/kitten/core/ConsumerServer.java" afterPath="$PROJECT_DIR$/kitten-consumer/src/main/java/org/nero/kitten/core/ConsumerServer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kitten-consumer/src/main/java/org/nero/kitten/core/NotifyHandler.java" afterPath="$PROJECT_DIR$/kitten-consumer/src/main/java/org/nero/kitten/core/NotifyHandler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kitten-core/src/main/java/org/nero/kitten/demoProvider/service/impl/HelloService.java" afterPath="$PROJECT_DIR$/kitten-core/src/main/java/org/nero/kitten/demoProvider/service/impl/HelloService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kitten-core/src/main/java/org/nero/kitten/kitten/core/KittenHandler.java" afterPath="$PROJECT_DIR$/kitten-core/src/main/java/org/nero/kitten/kitten/core/KittenHandler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kitten-core/src/main/java/org/nero/kitten/kitten/core/KittenProxy.java" afterPath="$PROJECT_DIR$/kitten-core/src/main/java/org/nero/kitten/kitten/core/KittenProxy.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kitten-core/src/main/java/org/nero/kitten/kitten/core/KittenServer.java" afterPath="$PROJECT_DIR$/kitten-core/src/main/java/org/nero/kitten/kitten/core/KittenServer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kitten-provider/pom.xml" afterPath="$PROJECT_DIR$/kitten-provider/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kitten-provider/src/main/java/org/nero/kitten/core/ProviderServer.java" afterPath="$PROJECT_DIR$/kitten-provider/src/main/java/org/nero/kitten/core/ProviderServer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kitten-register/src/main/java/org/nero/kitten/register/App.java" afterPath="$PROJECT_DIR$/kitten-register/src/main/java/org/nero/kitten/register/App.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kitten-provider/src/main/java/org/nero/kitten/core/RemoteInvokeHandler.java" afterPath="$PROJECT_DIR$/kitten-provider/src/main/java/org/nero/kitten/core/RemoteInvokeHandler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kitten-register/src/main/java/ServiceNotify/DemoConsumer.java" afterPath="$PROJECT_DIR$/kitten-register/src/main/java/ServiceNotify/DemoConsumer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kitten-register/src/main/java/ServiceNotify/DemoProvider.java" afterPath="$PROJECT_DIR$/kitten-register/src/main/java/ServiceNotify/DemoProvider.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kitten-register/src/main/java/ServiceNotify/DemoServer.java" afterPath="$PROJECT_DIR$/kitten-register/src/main/java/ServiceNotify/DemoServer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kitten-register/src/main/java/ServiceNotify/core/ConsumerServer.java" afterPath="$PROJECT_DIR$/kitten-register/src/main/java/ServiceNotify/core/ConsumerServer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kitten-register/src/main/java/ServiceNotify/core/Notification.java" afterPath="$PROJECT_DIR$/kitten-register/src/main/java/ServiceNotify/core/Notification.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kitten-register/src/main/java/ServiceNotify/core/ServiceHandler.java" afterPath="$PROJECT_DIR$/kitten-register/src/main/java/ServiceNotify/core/ServiceHandler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kitten-register/src/main/java/ServiceNotify/core/ServiceServer.java" afterPath="$PROJECT_DIR$/kitten-register/src/main/java/ServiceNotify/core/ServiceServer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kitten-register/src/main/java/ServiceNotify/request/InvokeRequest.java" afterPath="$PROJECT_DIR$/kitten-register/src/main/java/ServiceNotify/request/InvokeRequest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kitten-register/src/main/java/ServiceNotify/request/RegisterRequest.java" afterPath="$PROJECT_DIR$/kitten-register/src/main/java/ServiceNotify/request/RegisterRequest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kitten-register/src/main/java/ServiceNotify/request/Request.java" afterPath="$PROJECT_DIR$/kitten-register/src/main/java/ServiceNotify/request/Request.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kitten-register/src/main/java/ServiceNotify/request/ServiceRequestType.java" afterPath="$PROJECT_DIR$/kitten-register/src/main/java/ServiceNotify/request/ServiceRequestType.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kitten-register/src/main/java/ServiceNotify/request/SubscribeRequest.java" afterPath="$PROJECT_DIR$/kitten-register/src/main/java/ServiceNotify/request/SubscribeRequest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kitten-register/src/main/java/org/nero/kitten/register/core/RegisterServer.java" afterPath="$PROJECT_DIR$/kitten-register/src/main/java/org/nero/kitten/register/core/RegisterServer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kitten-register/src/main/java/org/nero/kitten/register/core/ServiceRegisterHandler.java" afterPath="$PROJECT_DIR$/kitten-register/src/main/java/org/nero/kitten/register/core/ServiceRegisterHandler.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/kitten-core/target/" />
@@ -36,107 +77,105 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="App.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/kitten-register/src/main/java/org/nero/kitten/register/App.java">
+      <file leaf-file-name="provider.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/kitten-provider/src/main/resources/provider.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Client.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/kitten-register/src/main/java/ServiceNotify/core/Client.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="292">
-              <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+            <state relative-caret-position="110">
+              <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ConsumerServer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/kitten-register/src/main/java/ServiceNotify/core/ConsumerServer.java">
+      <file leaf-file-name="dubbo.xsd" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/dubbo/2.5.3/dubbo-2.5.3.jar!/META-INF/dubbo.xsd">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="902">
-              <caret line="54" column="17" lean-forward="false" selection-start-line="54" selection-start-column="17" selection-end-line="54" selection-end-column="17" />
+            <state relative-caret-position="200">
+              <caret line="1058" column="0" lean-forward="true" selection-start-line="1058" selection-start-column="0" selection-end-line="1069" selection-end-column="22" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ConsumerServer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/kitten-consumer/src/main/java/org/nero/kitten/core/ConsumerServer.java">
+      <file leaf-file-name="kitten.schemas" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/kitten-common/src/main/resources/kitten.schemas">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="kitten.handlers" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/kitten-common/src/main/resources/kitten.handlers">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="kitten.xsd" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/kitten-common/src/main/resources/kitten.xsd">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="424">
-              <caret line="98" column="0" lean-forward="false" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
+              <caret line="36" column="55" lean-forward="false" selection-start-line="36" selection-start-column="55" selection-end-line="36" selection-end-column="55" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Application.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/kitten-common/src/main/java/core/bean/Application.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="8" column="24" lean-forward="false" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Register.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/kitten-common/src/main/java/core/bean/Register.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="8" column="21" lean-forward="false" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="KittenNamespaceHandler.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/kitten-common/src/main/java/core/schemas/KittenNamespaceHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="380">
+              <caret line="24" column="25" lean-forward="false" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#617#618#0" expanded="true" />
+                <element signature="e#644#645#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="provider.properties" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/kitten-provider/src/main/resources/provider.properties">
+      <file leaf-file-name="KittenBeanDefinationParser.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/kitten-common/src/main/java/core/schemas/KittenBeanDefinationParser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
-              <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+            <state relative-caret-position="330">
+              <caret line="15" column="20" lean-forward="false" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RemoteInvokeHandler.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/kitten-provider/src/main/java/org/nero/kitten/core/RemoteInvokeHandler.java">
+      <file leaf-file-name="KittenBean.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/kitten-common/src/main/java/core/bean/KittenBean.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="18" column="1" lean-forward="false" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProviderServer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/kitten-provider/src/main/java/org/nero/kitten/core/ProviderServer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="666">
-              <caret line="95" column="34" lean-forward="true" selection-start-line="95" selection-start-column="34" selection-end-line="95" selection-end-column="34" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="KittenClient.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/kitten-common/src/org/nero/kitten/common/core/KittenClient.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="358">
-              <caret line="68" column="13" lean-forward="false" selection-start-line="68" selection-start-column="13" selection-end-line="68" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ConfigHelper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/kitten-register/src/main/java/org/nero/kitten/register/utils/ConfigHelper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="116">
-              <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="JedisUtils.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/kitten-register/src/main/java/org/nero/kitten/register/utils/JedisUtils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="23" column="13" lean-forward="false" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+            <state relative-caret-position="176">
+              <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -174,11 +213,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/kitten-core/src/main/java/org/nero/kitten/registercenter/demo/DemoServer.java" />
-        <option value="$PROJECT_DIR$/kitten-core/src/main/java/org/nero/kitten/registercenter/utils/ConfigHelper.java" />
-        <option value="$PROJECT_DIR$/kitten-monitor/pom.xml" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/kitten-common/pom.xml" />
         <option value="$PROJECT_DIR$/kitten-core/pom.xml" />
         <option value="$PROJECT_DIR$/kitten-register/pom.xml" />
         <option value="$PROJECT_DIR$/kitten-register/src/org/nero/kitten/register/demo/DemoClient.java" />
@@ -212,7 +246,6 @@
         <option value="$PROJECT_DIR$/kitten-register/src/main/java/org/nero/kitten/register/core/RegisterServer.java" />
         <option value="$PROJECT_DIR$/kitten-register/src/main/java/org/nero/kitten/register/core/ServiceRegisterHandler.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/kitten-provider/pom.xml" />
         <option value="$PROJECT_DIR$/kitten-common/src/org/nero/kitten/common/core/KittenService.java" />
         <option value="$PROJECT_DIR$/kitten-common/src/org/nero/kitten/common/core/KittenResponse.java" />
         <option value="$PROJECT_DIR$/kitten-provider/src/main/java/org/nero/kitten/core/RemoteInvokeHandler.java" />
@@ -225,6 +258,12 @@
         <option value="$PROJECT_DIR$/kitten-provider/src/main/java/org/nero/kitten/core/ProviderServer.java" />
         <option value="$PROJECT_DIR$/kitten-consumer/src/main/java/org/nero/kitten/core/ConsumerServer.java" />
         <option value="$PROJECT_DIR$/kitten-provider/src/main/resources/provider.properties" />
+        <option value="$PROJECT_DIR$/kitten-provider/pom.xml" />
+        <option value="$PROJECT_DIR$/kitten-common/src/org/nero/kitten/common/core/schemas/KittenNamespaceHandler.java" />
+        <option value="$PROJECT_DIR$/kitten-common/src/org/nero/kitten/common/core/schemas/KittenBeanDefinationParser.java" />
+        <option value="$PROJECT_DIR$/kitten-common/src/org/nero/kitten/common/core/bean/KittenBean.java" />
+        <option value="$PROJECT_DIR$/kitten-provider/src/main/resources/provider.xml" />
+        <option value="$PROJECT_DIR$/kitten-common/src/main/resources/kitten.xsd" />
       </list>
     </option>
   </component>
@@ -410,48 +449,6 @@
               <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kitten" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kitten" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kitten" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kitten-provider" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kitten" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -504,6 +501,90 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kitten" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kitten" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kitten-common" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kitten" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kitten" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kitten-common" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kitten" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kitten" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kitten-common" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kitten" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kitten" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kitten-common" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -542,7 +623,7 @@
     <configuration default="false" name="DemoProvider" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="org.nero.kitten.common.core.request.*" />
+          <option name="PATTERN" value="main.java.core.request.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -562,7 +643,7 @@
     <configuration default="false" name="DemoConsumer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="org.nero.kitten.common.core.request.*" />
+          <option name="PATTERN" value="main.java.core.request.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -1144,12 +1225,12 @@
       <option name="presentableId" value="Default" />
       <updated>1505467822553</updated>
       <workItem from="1505467823937" duration="43093000" />
-      <workItem from="1506392653403" duration="13005000" />
+      <workItem from="1506392653403" duration="14925000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56098000" />
+    <option name="totallyTimeSpent" value="58018000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -1207,113 +1288,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/kitten-core/src/main/java/org/nero/kitten/demoProvider/service/IHelloService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kitten-core/src/main/java/org/nero/kitten/demoProvider/service/impl/HelloService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kitten-common/src/org/nero/kitten/common/core/Server.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kitten-register/src/main/java/ServiceNotify/core/ServiceServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="673">
-          <caret line="50" column="18" lean-forward="false" selection-start-line="50" selection-start-column="18" selection-end-line="50" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kitten-register/src/main/java/org/nero/kitten/register/core/RegisterServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="111" column="0" lean-forward="false" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1114#1147#0" expanded="true" />
-            <element signature="e#1235#1266#0" expanded="true" />
-            <element signature="e#2476#2477#0" expanded="true" />
-            <element signature="e#2508#2509#0" expanded="true" />
-            <element signature="e#2893#3411#0" expanded="true" />
-            <element signature="e#3410#3411#0" expanded="true" />
-            <element signature="e#4003#4004#0" expanded="true" />
-            <element signature="e#4030#4031#0" expanded="true" />
-            <element signature="e#4067#4068#0" expanded="true" />
-            <element signature="e#4099#4100#0" expanded="true" />
-            <element signature="e#4134#4135#0" expanded="true" />
-            <element signature="e#4166#4167#0" expanded="true" />
-            <element signature="e#4213#4214#0" expanded="true" />
-            <element signature="e#4248#4249#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kitten-register/src/main/java/org/nero/kitten/register/core/ServiceRegisterHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="78" column="0" lean-forward="false" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="726">
-          <caret line="33" column="14" lean-forward="true" selection-start-line="33" selection-start-column="14" selection-end-line="33" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/3.2.12.RELEASE/spring-context-3.2.12.RELEASE-sources.jar!/org/springframework/context/support/AbstractXmlApplicationContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="60" column="11" lean-forward="false" selection-start-line="60" selection-start-column="11" selection-end-line="60" selection-end-column="11" />
-          <folding>
-            <element signature="e#2311#2312#0" expanded="false" />
-            <element signature="e#2331#2332#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/3.2.12.RELEASE/spring-context-3.2.12.RELEASE-sources.jar!/org/springframework/context/support/AbstractRefreshableApplicationContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="88" column="11" lean-forward="false" selection-start-line="88" selection-start-column="11" selection-end-line="88" selection-end-column="11" />
-          <folding>
-            <element signature="e#3888#3889#0" expanded="false" />
-            <element signature="e#3908#3909#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/3.2.12.RELEASE/spring-context-3.2.12.RELEASE-sources.jar!/org/springframework/context/support/AbstractRefreshableConfigApplicationContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="74" column="16" lean-forward="false" selection-start-line="74" selection-start-column="16" selection-end-line="74" selection-end-column="16" />
-          <folding>
-            <element signature="e#2128#2129#0" expanded="false" />
-            <element signature="e#2148#2149#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/3.2.12.RELEASE/spring-context-3.2.12.RELEASE-sources.jar!/org/springframework/context/support/ClassPathXmlApplicationContext.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="309">
@@ -1330,15 +1304,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kitten-provider/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="26" column="20" lean-forward="false" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kitten-common/src/org/nero/kitten/common/core/request/SubscribeRequest.java">
+    <entry file="file://$PROJECT_DIR$/kitten-common/src/main/java/core/request/SubscribeRequest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1346,7 +1312,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kitten-common/src/org/nero/kitten/common/core/request/ServiceRequestType.java">
+    <entry file="file://$PROJECT_DIR$/kitten-common/src/main/java/core/request/ServiceRequestType.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1354,7 +1320,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kitten-common/src/org/nero/kitten/common/core/request/InvokeRequest.java">
+    <entry file="file://$PROJECT_DIR$/kitten-common/src/main/java/core/request/InvokeRequest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1362,7 +1328,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kitten-common/src/org/nero/kitten/common/core/KittenEncoder.java">
+    <entry file="file://$PROJECT_DIR$/kitten-common/src/main/java/core/KittenEncoder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
@@ -1370,7 +1336,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kitten-common/src/org/nero/kitten/common/core/KittenRequest.java">
+    <entry file="file://$PROJECT_DIR$/kitten-common/src/main/java/core/KittenRequest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
@@ -1386,7 +1352,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kitten-common/src/org/nero/kitten/common/core/KittenService.java">
+    <entry file="file://$PROJECT_DIR$/kitten-common/src/main/java/core/KittenService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
           <caret line="21" column="1" lean-forward="false" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
@@ -1418,14 +1384,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kitten-common/src/org/nero/kitten/common/core/KittenResponse.java">
+    <entry file="file://$PROJECT_DIR$/kitten-common/src/main/java/core/KittenResponse.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="484">
           <caret line="28" column="43" lean-forward="true" selection-start-line="28" selection-start-column="43" selection-end-line="28" selection-end-column="43" />
           <folding>
-            <element signature="e#609#610#0" expanded="false" />
-            <element signature="e#637#638#0" expanded="false" />
-            <element signature="e#666#667#0" expanded="false" />
+            <element signature="e#596#597#0" expanded="false" />
+            <element signature="e#624#625#0" expanded="false" />
+            <element signature="e#653#654#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1435,13 +1401,13 @@
         <state relative-caret-position="707">
           <caret line="63" column="5" lean-forward="true" selection-start-line="63" selection-start-column="5" selection-end-line="63" selection-end-column="5" />
           <folding>
-            <element signature="e#992#2396#0" expanded="false" />
-            <element signature="e#2395#2396#0" expanded="false" />
+            <element signature="e#953#2357#0" expanded="false" />
+            <element signature="e#2356#2357#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kitten-common/src/org/nero/kitten/common/core/dto/Service.java">
+    <entry file="file://$PROJECT_DIR$/kitten-common/src/main/java/core/dto/Service.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="331">
           <caret line="18" column="30" lean-forward="false" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="30" />
@@ -1481,40 +1447,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kitten-common/src/org/nero/kitten/common/core/request/RegisterRequest.java">
+    <entry file="file://$PROJECT_DIR$/kitten-common/src/main/java/core/request/RegisterRequest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="177">
           <caret line="18" column="40" lean-forward="false" selection-start-line="15" selection-start-column="4" selection-end-line="18" selection-end-column="40" />
           <folding>
-            <element signature="e#1267#1268#0" expanded="true" />
-            <element signature="e#1297#1298#0" expanded="true" />
-            <element signature="e#1343#1344#0" expanded="true" />
-            <element signature="e#1381#1382#0" expanded="true" />
-            <element signature="e#1410#1411#0" expanded="true" />
-            <element signature="e#1435#1436#0" expanded="true" />
-            <element signature="e#1471#1472#0" expanded="true" />
-            <element signature="e#1499#1500#0" expanded="true" />
-            <element signature="e#1531#1532#0" expanded="true" />
-            <element signature="e#1558#1559#0" expanded="true" />
-            <element signature="e#1599#1600#0" expanded="true" />
-            <element signature="e#1631#1632#0" expanded="true" />
-            <element signature="e#1669#1670#0" expanded="true" />
-            <element signature="e#1703#1704#0" expanded="true" />
-            <element signature="e#1757#1758#0" expanded="true" />
-            <element signature="e#1803#1804#0" expanded="true" />
-            <element signature="e#1841#1842#0" expanded="true" />
-            <element signature="e#1871#1872#0" expanded="true" />
-            <element signature="e#1921#1922#0" expanded="true" />
-            <element signature="e#1959#1960#0" expanded="true" />
-            <element signature="e#2006#2007#0" expanded="true" />
-            <element signature="e#2043#2044#0" expanded="true" />
-            <element signature="e#2109#2110#0" expanded="true" />
-            <element signature="e#2161#2162#0" expanded="true" />
+            <element signature="e#1254#1255#0" expanded="true" />
+            <element signature="e#1284#1285#0" expanded="true" />
+            <element signature="e#1330#1331#0" expanded="true" />
+            <element signature="e#1368#1369#0" expanded="true" />
+            <element signature="e#1397#1398#0" expanded="true" />
+            <element signature="e#1422#1423#0" expanded="true" />
+            <element signature="e#1458#1459#0" expanded="true" />
+            <element signature="e#1486#1487#0" expanded="true" />
+            <element signature="e#1518#1519#0" expanded="true" />
+            <element signature="e#1545#1546#0" expanded="true" />
+            <element signature="e#1586#1587#0" expanded="true" />
+            <element signature="e#1618#1619#0" expanded="true" />
+            <element signature="e#1656#1657#0" expanded="true" />
+            <element signature="e#1690#1691#0" expanded="true" />
+            <element signature="e#1744#1745#0" expanded="true" />
+            <element signature="e#1790#1791#0" expanded="true" />
+            <element signature="e#1828#1829#0" expanded="true" />
+            <element signature="e#1858#1859#0" expanded="true" />
+            <element signature="e#1908#1909#0" expanded="true" />
+            <element signature="e#1946#1947#0" expanded="true" />
+            <element signature="e#1993#1994#0" expanded="true" />
+            <element signature="e#2030#2031#0" expanded="true" />
+            <element signature="e#2096#2097#0" expanded="true" />
+            <element signature="e#2148#2149#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kitten-common/src/org/nero/kitten/common/core/request/Request.java">
+    <entry file="file://$PROJECT_DIR$/kitten-common/src/main/java/core/request/Request.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="485">
           <caret line="23" column="5" lean-forward="false" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
@@ -1551,7 +1517,7 @@
         <state relative-caret-position="396">
           <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1596,7 +1562,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kitten-common/src/org/nero/kitten/common/core/KittenClient.java">
+    <entry file="file://$PROJECT_DIR$/kitten-common/src/main/java/core/KittenClient.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="358">
           <caret line="68" column="13" lean-forward="false" selection-start-line="68" selection-start-column="13" selection-end-line="68" selection-end-column="13" />
@@ -1659,7 +1625,7 @@
     <entry file="file://$PROJECT_DIR$/kitten-provider/src/main/java/org/nero/kitten/core/ProviderServer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="666">
-          <caret line="95" column="34" lean-forward="true" selection-start-line="95" selection-start-column="34" selection-end-line="95" selection-end-column="34" />
+          <caret line="94" column="34" lean-forward="false" selection-start-line="94" selection-start-column="34" selection-end-line="94" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1676,8 +1642,100 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/kitten-provider/src/main/resources/provider.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        <state relative-caret-position="132">
+          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kitten-provider/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="26" column="20" lean-forward="false" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kitten-common/src/main/java/core/schemas/KittenBeanDefinationParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="15" column="20" lean-forward="false" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kitten-common/src/main/java/core/schemas/KittenNamespaceHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="24" column="25" lean-forward="false" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#617#618#0" expanded="true" />
+            <element signature="e#644#645#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kitten-common/src/main/java/core/bean/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="24" lean-forward="false" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kitten-common/src/main/java/core/bean/KittenBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kitten-common/src/main/java/core/bean/Register.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="21" lean-forward="false" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kitten-common/src/main/resources/kitten.schemas">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kitten-common/src/main/resources/kitten.handlers">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kitten-provider/src/main/resources/provider.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/dubbo/2.5.3/dubbo-2.5.3.jar!/META-INF/dubbo.xsd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="1058" column="0" lean-forward="true" selection-start-line="1058" selection-start-column="0" selection-end-line="1069" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kitten-common/src/main/resources/kitten.xsd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="424">
+          <caret line="36" column="55" lean-forward="false" selection-start-line="36" selection-start-column="55" selection-end-line="36" selection-end-column="55" />
           <folding />
         </state>
       </provider>
@@ -1745,7 +1803,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>kitten-consumer</last-edited>
+          <last-edited>kitten-common</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

@@ -1,9 +1,9 @@
 package ServiceNotify;
 
 import ServiceNotify.core.Client;
-import org.nero.kitten.common.core.request.RegisterRequest;
-import org.nero.kitten.common.core.request.Request;
-import org.nero.kitten.common.core.request.ServiceRequestType;
+import main.java.core.request.RegisterRequest;
+import main.java.core.request.Request;
+import main.java.core.request.ServiceRequestType;
 
 import java.io.IOException;
 import java.net.InetSocketAddress;

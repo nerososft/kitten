@@ -1,4 +1,4 @@
-package org.nero.kitten.common.core;
+package main.java.core;
 
 import org.springframework.stereotype.Component;
 

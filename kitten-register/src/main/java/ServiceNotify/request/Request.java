@@ -1,4 +1,4 @@
-package org.nero.kitten.common.core.request;
+package main.java.core.request;
 
 import java.io.Serializable;
 

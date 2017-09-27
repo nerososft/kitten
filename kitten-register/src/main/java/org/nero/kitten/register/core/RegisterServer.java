@@ -1,8 +1,8 @@
 package org.nero.kitten.register.core;
 
-import org.nero.kitten.common.core.Server;
-import org.nero.kitten.common.core.request.RegisterRequest;
-import org.nero.kitten.common.core.request.Request;
+import main.java.core.Server;
+import main.java.core.request.RegisterRequest;
+import main.java.core.request.Request;
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelFuture;
 import io.netty.channel.ChannelInitializer;
@@ -11,8 +11,8 @@ import io.netty.channel.EventLoopGroup;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
-import org.nero.kitten.common.core.KittenDecoder;
-import org.nero.kitten.common.core.KittenEncoder;
+import main.java.core.KittenDecoder;
+import main.java.core.KittenEncoder;
 
 import java.net.InetSocketAddress;
 import java.util.ArrayList;

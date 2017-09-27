@@ -2,7 +2,7 @@ package org.nero.kitten.core;
 
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
-import org.nero.kitten.common.core.request.Request;
+import main.java.core.request.Request;
 
 /**
  * Author neroyang

@@ -1,7 +1,7 @@
 package org.nero.kitten.demoProvider.service.impl;
 
 import org.nero.kitten.demoProvider.service.IHelloService;
-import org.nero.kitten.common.core.KittenService;
+import main.java.core.KittenService;
 
 /**
  * Author :  root

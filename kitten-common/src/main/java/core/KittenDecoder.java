@@ -1,4 +1,4 @@
-package org.nero.kitten.common.core;
+package main.java.core;
 
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandlerContext;
