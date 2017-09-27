@@ -2,55 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="edaef943-db95-4b11-aa00-4d230e34e98e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kitten-common/src/main/java/core/bean/Application.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kitten-common/src/main/java/core/bean/KittenBean.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kitten-common/src/main/java/core/bean/Register.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kitten-common/src/main/java/core/schemas/KittenBeanDefinationParser.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kitten-common/src/main/java/core/schemas/KittenNamespaceHandler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kitten-common/src/main/resources/kitten.handlers" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kitten-common/src/main/resources/kitten.schemas" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kitten-common/src/main/resources/kitten.xsd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kitten-provider/src/main/resources/provider.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/kitten-common/src/org/nero/kitten/common/core/KittenEncoder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/kitten-provider/src/main/resources/provider.properties" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/kitten-common/src/org/nero/kitten/common/core/KittenClient.java" afterPath="$PROJECT_DIR$/kitten-common/src/main/java/core/KittenClient.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/kitten-common/src/org/nero/kitten/common/core/KittenDecoder.java" afterPath="$PROJECT_DIR$/kitten-common/src/main/java/core/KittenDecoder.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/kitten-common/src/org/nero/kitten/common/core/KittenRequest.java" afterPath="$PROJECT_DIR$/kitten-common/src/main/java/core/KittenRequest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/kitten-common/src/org/nero/kitten/common/core/KittenResponse.java" afterPath="$PROJECT_DIR$/kitten-common/src/main/java/core/KittenResponse.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/kitten-common/src/org/nero/kitten/common/core/KittenService.java" afterPath="$PROJECT_DIR$/kitten-common/src/main/java/core/KittenService.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/kitten-common/src/org/nero/kitten/common/core/SerializationUtil.java" afterPath="$PROJECT_DIR$/kitten-common/src/main/java/core/SerializationUtil.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/kitten-common/src/org/nero/kitten/common/core/Server.java" afterPath="$PROJECT_DIR$/kitten-common/src/main/java/core/Server.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/kitten-common/src/org/nero/kitten/common/core/dto/Service.java" afterPath="$PROJECT_DIR$/kitten-common/src/main/java/core/dto/Service.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/kitten-common/src/org/nero/kitten/common/core/request/InvokeRequest.java" afterPath="$PROJECT_DIR$/kitten-common/src/main/java/core/request/InvokeRequest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/kitten-common/src/org/nero/kitten/common/core/request/RegisterRequest.java" afterPath="$PROJECT_DIR$/kitten-common/src/main/java/core/request/RegisterRequest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/kitten-common/src/org/nero/kitten/common/core/request/Request.java" afterPath="$PROJECT_DIR$/kitten-common/src/main/java/core/request/Request.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/kitten-common/src/org/nero/kitten/common/core/request/ServiceRequestType.java" afterPath="$PROJECT_DIR$/kitten-common/src/main/java/core/request/ServiceRequestType.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/kitten-common/src/org/nero/kitten/common/core/request/SubscribeRequest.java" afterPath="$PROJECT_DIR$/kitten-common/src/main/java/core/request/SubscribeRequest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kitten-config/pom.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kitten-config/src/main/resources/kitten.xsd" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kitten-common/src/main/resources/kitten.xsd" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/kitten-common/src/main/java/core/bean/Application.java" afterPath="$PROJECT_DIR$/kitten-config/src/main/java/org/nero/kitten/kitten_config/spring/bean/Application.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/kitten-common/src/main/java/core/bean/KittenBean.java" afterPath="$PROJECT_DIR$/kitten-config/src/main/java/org/nero/kitten/kitten_config/spring/bean/KittenBean.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/kitten-common/src/main/java/core/bean/Register.java" afterPath="$PROJECT_DIR$/kitten-config/src/main/java/org/nero/kitten/kitten_config/spring/bean/Register.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/kitten-common/src/main/java/core/schemas/KittenBeanDefinationParser.java" afterPath="$PROJECT_DIR$/kitten-config/src/main/java/org/nero/kitten/kitten_config/spring/schemas/KittenBeanDefinationParser.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/kitten-common/src/main/java/core/schemas/KittenNamespaceHandler.java" afterPath="$PROJECT_DIR$/kitten-config/src/main/java/org/nero/kitten/kitten_config/spring/schemas/KittenNamespaceHandler.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/kitten-common/src/main/resources/kitten.handlers" afterPath="$PROJECT_DIR$/kitten-config/src/main/resources/kitten.handlers" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/kitten-common/src/main/resources/kitten.schemas" afterPath="$PROJECT_DIR$/kitten-config/src/main/resources/kitten.schemas" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kitten-common/kitten-common.iml" afterPath="$PROJECT_DIR$/kitten-common/kitten-common.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kitten-consumer/src/main/java/org/nero/kitten/core/ConsumerServer.java" afterPath="$PROJECT_DIR$/kitten-consumer/src/main/java/org/nero/kitten/core/ConsumerServer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kitten-consumer/src/main/java/org/nero/kitten/core/NotifyHandler.java" afterPath="$PROJECT_DIR$/kitten-consumer/src/main/java/org/nero/kitten/core/NotifyHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kitten-core/src/main/java/org/nero/kitten/demoProvider/service/impl/HelloService.java" afterPath="$PROJECT_DIR$/kitten-core/src/main/java/org/nero/kitten/demoProvider/service/impl/HelloService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kitten-core/src/main/java/org/nero/kitten/kitten/core/KittenHandler.java" afterPath="$PROJECT_DIR$/kitten-core/src/main/java/org/nero/kitten/kitten/core/KittenHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kitten-core/src/main/java/org/nero/kitten/kitten/core/KittenProxy.java" afterPath="$PROJECT_DIR$/kitten-core/src/main/java/org/nero/kitten/kitten/core/KittenProxy.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kitten-core/src/main/java/org/nero/kitten/kitten/core/KittenServer.java" afterPath="$PROJECT_DIR$/kitten-core/src/main/java/org/nero/kitten/kitten/core/KittenServer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kitten-provider/pom.xml" afterPath="$PROJECT_DIR$/kitten-provider/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kitten-provider/src/main/java/org/nero/kitten/core/ProviderServer.java" afterPath="$PROJECT_DIR$/kitten-provider/src/main/java/org/nero/kitten/core/ProviderServer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kitten-provider/src/main/java/org/nero/kitten/core/RemoteInvokeHandler.java" afterPath="$PROJECT_DIR$/kitten-provider/src/main/java/org/nero/kitten/core/RemoteInvokeHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kitten-register/src/main/java/ServiceNotify/DemoConsumer.java" afterPath="$PROJECT_DIR$/kitten-register/src/main/java/ServiceNotify/DemoConsumer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kitten-register/src/main/java/ServiceNotify/DemoProvider.java" afterPath="$PROJECT_DIR$/kitten-register/src/main/java/ServiceNotify/DemoProvider.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kitten-register/src/main/java/ServiceNotify/DemoServer.java" afterPath="$PROJECT_DIR$/kitten-register/src/main/java/ServiceNotify/DemoServer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kitten-register/src/main/java/ServiceNotify/core/ConsumerServer.java" afterPath="$PROJECT_DIR$/kitten-register/src/main/java/ServiceNotify/core/ConsumerServer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kitten-register/src/main/java/ServiceNotify/core/Notification.java" afterPath="$PROJECT_DIR$/kitten-register/src/main/java/ServiceNotify/core/Notification.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kitten-register/src/main/java/ServiceNotify/core/ServiceHandler.java" afterPath="$PROJECT_DIR$/kitten-register/src/main/java/ServiceNotify/core/ServiceHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kitten-register/src/main/java/ServiceNotify/core/ServiceServer.java" afterPath="$PROJECT_DIR$/kitten-register/src/main/java/ServiceNotify/core/ServiceServer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kitten-register/src/main/java/ServiceNotify/request/InvokeRequest.java" afterPath="$PROJECT_DIR$/kitten-register/src/main/java/ServiceNotify/request/InvokeRequest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kitten-register/src/main/java/ServiceNotify/request/RegisterRequest.java" afterPath="$PROJECT_DIR$/kitten-register/src/main/java/ServiceNotify/request/RegisterRequest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kitten-register/src/main/java/ServiceNotify/request/Request.java" afterPath="$PROJECT_DIR$/kitten-register/src/main/java/ServiceNotify/request/Request.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kitten-register/src/main/java/ServiceNotify/request/ServiceRequestType.java" afterPath="$PROJECT_DIR$/kitten-register/src/main/java/ServiceNotify/request/ServiceRequestType.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kitten-register/src/main/java/ServiceNotify/request/SubscribeRequest.java" afterPath="$PROJECT_DIR$/kitten-register/src/main/java/ServiceNotify/request/SubscribeRequest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kitten-register/src/main/java/org/nero/kitten/register/core/RegisterServer.java" afterPath="$PROJECT_DIR$/kitten-register/src/main/java/org/nero/kitten/register/core/RegisterServer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kitten-register/src/main/java/org/nero/kitten/register/core/ServiceRegisterHandler.java" afterPath="$PROJECT_DIR$/kitten-register/src/main/java/org/nero/kitten/register/core/ServiceRegisterHandler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/kitten-core/target/" />
@@ -59,6 +22,7 @@
     <ignored path="$PROJECT_DIR$/kitten-register/target/" />
     <ignored path="$PROJECT_DIR$/kitten-provider/target/" />
     <ignored path="$PROJECT_DIR$/kitten-consumer/target/" />
+    <ignored path="$PROJECT_DIR$/kitten-config/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -80,8 +44,8 @@
       <file leaf-file-name="provider.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/kitten-provider/src/main/resources/provider.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+            <state relative-caret-position="66">
+              <caret line="3" column="59" lean-forward="false" selection-start-line="3" selection-start-column="59" selection-end-line="3" selection-end-column="59" />
               <folding />
             </state>
           </provider>
@@ -90,25 +54,15 @@
       <file leaf-file-name="dubbo.xsd" pinned="false" current-in-tab="false">
         <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/dubbo/2.5.3/dubbo-2.5.3.jar!/META-INF/dubbo.xsd">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="1058" column="0" lean-forward="true" selection-start-line="1058" selection-start-column="0" selection-end-line="1069" selection-end-column="22" />
+            <state relative-caret-position="14841">
+              <caret line="1117" column="14" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1149" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="kitten.schemas" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/kitten-common/src/main/resources/kitten.schemas">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="kitten.handlers" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/kitten-common/src/main/resources/kitten.handlers">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/kitten-config/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -118,17 +72,17 @@
         </entry>
       </file>
       <file leaf-file-name="kitten.xsd" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/kitten-common/src/main/resources/kitten.xsd">
+        <entry file="file://$PROJECT_DIR$/kitten-config/src/main/resources/kitten.xsd">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="424">
-              <caret line="36" column="55" lean-forward="false" selection-start-line="36" selection-start-column="55" selection-end-line="36" selection-end-column="55" />
+            <state relative-caret-position="286">
+              <caret line="13" column="6" lean-forward="true" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="Application.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/kitten-common/src/main/java/core/bean/Application.java">
+        <entry file="file://$PROJECT_DIR$/kitten-config/src/main/java/org/nero/kitten/kitten_config/spring/bean/Application.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="176">
               <caret line="8" column="24" lean-forward="false" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
@@ -138,7 +92,7 @@
         </entry>
       </file>
       <file leaf-file-name="Register.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/kitten-common/src/main/java/core/bean/Register.java">
+        <entry file="file://$PROJECT_DIR$/kitten-config/src/main/java/org/nero/kitten/kitten_config/spring/bean/Register.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="176">
               <caret line="8" column="21" lean-forward="false" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
@@ -147,32 +101,8 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="KittenNamespaceHandler.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/kitten-common/src/main/java/core/schemas/KittenNamespaceHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="24" column="25" lean-forward="false" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#617#618#0" expanded="true" />
-                <element signature="e#644#645#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="KittenBeanDefinationParser.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/kitten-common/src/main/java/core/schemas/KittenBeanDefinationParser.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="15" column="20" lean-forward="false" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="KittenBean.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/kitten-common/src/main/java/core/bean/KittenBean.java">
+        <entry file="file://$PROJECT_DIR$/kitten-config/src/main/java/org/nero/kitten/kitten_config/spring/bean/KittenBean.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="176">
               <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
@@ -195,6 +125,8 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>newinstance</find>
+      <find>parameter</find>
+      <find>method</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -213,7 +145,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/kitten-core/pom.xml" />
         <option value="$PROJECT_DIR$/kitten-register/pom.xml" />
         <option value="$PROJECT_DIR$/kitten-register/src/org/nero/kitten/register/demo/DemoClient.java" />
         <option value="$PROJECT_DIR$/kitten-register/src/org/nero/kitten/register/core/RegisterServer.java" />
@@ -264,6 +195,7 @@
         <option value="$PROJECT_DIR$/kitten-common/src/org/nero/kitten/common/core/bean/KittenBean.java" />
         <option value="$PROJECT_DIR$/kitten-provider/src/main/resources/provider.xml" />
         <option value="$PROJECT_DIR$/kitten-common/src/main/resources/kitten.xsd" />
+        <option value="$PROJECT_DIR$/kitten-config/pom.xml" />
       </list>
     </option>
   </component>
@@ -326,7 +258,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="kitten-register" />
+              <option name="myItemId" value="kitten-config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -340,7 +272,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="kitten-register" />
+              <option name="myItemId" value="kitten-config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -358,61 +290,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="kitten-register" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kitten" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kitten" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kitten-provider" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kitten" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kitten" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kitten-provider" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kitten" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kitten" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kitten-provider" />
+              <option name="myItemId" value="kitten-config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -438,7 +316,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="kitten-provider" />
+              <option name="myItemId" value="kitten-config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -449,58 +327,8 @@
               <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="kitten" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kitten" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kitten-consumer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kitten" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kitten" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kitten-consumer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kitten" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kitten" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kitten-consumer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
+              <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -551,36 +379,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kitten" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kitten" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kitten-common" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -612,11 +410,11 @@
       <recent name="$PROJECT_DIR$/src/main/resources/spring" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/kitten-config/src/main" />
       <recent name="$PROJECT_DIR$/kitten-provider/src/main" />
       <recent name="$PROJECT_DIR$/kitten-common/src/org/nero/kitten/common/core" />
       <recent name="$PROJECT_DIR$/kitten-register/src" />
       <recent name="$PROJECT_DIR$/kitten-register" />
-      <recent name="$PROJECT_DIR$/kitten-monitor" />
     </key>
   </component>
   <component name="RunManager" selected="Application.App">
@@ -1225,12 +1023,12 @@
       <option name="presentableId" value="Default" />
       <updated>1505467822553</updated>
       <workItem from="1505467823937" duration="43093000" />
-      <workItem from="1506392653403" duration="14925000" />
+      <workItem from="1506392653403" duration="16440000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58018000" />
+    <option name="totallyTimeSpent" value="59533000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -1251,12 +1049,12 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39919356" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296371" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3296371" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3296371" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296371" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1288,22 +1086,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/3.2.12.RELEASE/spring-context-3.2.12.RELEASE-sources.jar!/org/springframework/context/support/ClassPathXmlApplicationContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="138" column="17" lean-forward="false" selection-start-line="138" selection-start-column="17" selection-end-line="138" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/3.2.12.RELEASE/spring-context-3.2.12.RELEASE-sources.jar!/org/springframework/context/support/AbstractApplicationContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-219">
-          <caret line="551" column="19" lean-forward="false" selection-start-line="551" selection-start-column="19" selection-end-line="551" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/kitten-common/src/main/java/core/request/SubscribeRequest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1591,7 +1373,7 @@
         <state relative-caret-position="242">
           <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1656,7 +1438,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kitten-common/src/main/java/core/schemas/KittenBeanDefinationParser.java">
+    <entry file="file://$PROJECT_DIR$/kitten-config/src/main/java/org/nero/kitten/kitten_config/spring/schemas/KittenBeanDefinationParser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="15" column="20" lean-forward="false" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
@@ -1664,19 +1446,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kitten-common/src/main/java/core/schemas/KittenNamespaceHandler.java">
+    <entry file="file://$PROJECT_DIR$/kitten-config/src/main/java/org/nero/kitten/kitten_config/spring/schemas/KittenNamespaceHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
           <caret line="24" column="25" lean-forward="false" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#617#618#0" expanded="true" />
-            <element signature="e#644#645#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kitten-common/src/main/java/core/bean/Application.java">
+    <entry file="file://$PROJECT_DIR$/kitten-config/src/main/java/org/nero/kitten/kitten_config/spring/bean/Application.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
           <caret line="8" column="24" lean-forward="false" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
@@ -1684,7 +1462,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kitten-common/src/main/java/core/bean/KittenBean.java">
+    <entry file="file://$PROJECT_DIR$/kitten-config/src/main/java/org/nero/kitten/kitten_config/spring/bean/KittenBean.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
           <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
@@ -1692,7 +1470,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kitten-common/src/main/java/core/bean/Register.java">
+    <entry file="file://$PROJECT_DIR$/kitten-config/src/main/java/org/nero/kitten/kitten_config/spring/bean/Register.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
           <caret line="8" column="21" lean-forward="false" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
@@ -1718,24 +1496,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/kitten-provider/src/main/resources/provider.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        <state relative-caret-position="66">
+          <caret line="3" column="59" lean-forward="false" selection-start-line="3" selection-start-column="59" selection-end-line="3" selection-end-column="59" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/dubbo/2.5.3/dubbo-2.5.3.jar!/META-INF/dubbo.xsd">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="1058" column="0" lean-forward="true" selection-start-line="1058" selection-start-column="0" selection-end-line="1069" selection-end-column="22" />
+        <state relative-caret-position="14841">
+          <caret line="1117" column="14" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1149" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/kitten-common/src/main/resources/kitten.xsd">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="424">
-          <caret line="36" column="55" lean-forward="false" selection-start-line="36" selection-start-column="55" selection-end-line="36" selection-end-column="55" />
+        <state relative-caret-position="-12870">
+          <caret line="16" column="33" lean-forward="false" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kitten-config/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kitten-config/src/main/resources/kitten.xsd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="13" column="6" lean-forward="true" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
           <folding />
         </state>
       </provider>

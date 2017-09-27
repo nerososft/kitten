@@ -29,6 +29,7 @@
     <module>kitten-register</module>
     <module>kitten-provider</module>
     <module>kitten-consumer</module>
+      <module>kitten-config</module>
   </modules>
 
   <properties>

@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="kitten-common" />
+        <module name="kitten-config" />
         <module name="kitten-consumer" />
         <module name="kitten-core" />
         <module name="kitten-monitor" />
@@ -18,6 +19,7 @@
     <bytecodeTargetLevel>
       <module name="kitten" target="1.7" />
       <module name="kitten-common" target="1.5" />
+      <module name="kitten-config" target="1.7" />
       <module name="kitten-consumer" target="1.7" />
       <module name="kitten-core" target="1.7" />
       <module name="kitten-monitor" target="1.5" />
