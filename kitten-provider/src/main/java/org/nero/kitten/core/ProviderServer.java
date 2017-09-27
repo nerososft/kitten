@@ -90,6 +90,7 @@ public class ProviderServer implements Server, ApplicationContextAware, Initiali
                 String interfaceName = serviceBean.getClass().getAnnotation(KittenService.class).value().getName();
 
                 //此处注册服务
+                //
                 //handlerMap.put(interfaceName, serviceBean);
                 try {
                     client.send(new Request<RegisterRequest>(

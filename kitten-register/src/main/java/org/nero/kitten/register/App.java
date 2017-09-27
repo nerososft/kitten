@@ -1,6 +1,7 @@
 package org.nero.kitten.register;
 
 import org.nero.kitten.register.core.RegisterServer;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
  * Author neroyang
@@ -10,7 +11,6 @@ import org.nero.kitten.register.core.RegisterServer;
  */
 public class App {
     public static void main(String[] args){
-        RegisterServer server = new RegisterServer(8888);
-        server.start();
+        new ClassPathXmlApplicationContext("spring/spring-provider.xml", "spring/spring-consumer.xml");
     }
 }
